@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  background: hsl(279, 100%, 97%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  width: 100vw;
+  height: auto;
+}
+.background {
+  z-index: 0;
+  top: 0;
+  position: absolute;
+  height: 40vh;
+  background-image: url("./assets/images/background-pattern-desktop.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+}
+main {
+  padding: 2%;
+  width: 50vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  z-index: 1;
+  box-shadow: 10px 10px 42px -25px rgba(0, 0, 0, 0.72);
+  -webkit-box-shadow: 10px 10px 42px -25px rgba(0, 0, 0, 0.72);
+  -moz-box-shadow: 10px 10px 42px -25px rgba(0, 0, 0, 0.72);
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+main header {
+  display: flex;
+  align-items: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+main header h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-left: 10%;
+}
+.image {
+  width: 100%;
+  height: 100%;
+}
+main ul {
+  width: 100%;
+  list-style-type: none;
+  padding: 10px;
+}
+main ul li {
+  position: relative;
+  font-weight: 700;
+  width: 100%;
+
+  list-style-type: none;
+  padding: 10px;
+display: flex;
+height: auto;
+flex-direction: column;
+align-items: start;
+
+}
+main ul li h3{
+  color: hsl(292, 42%, 14%);
+  font-size: 1.3rem;
+  font-weight: 600;
+  height: 3rem;
+  transition: 0.3S;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+main ul li h3:hover{
+  color: hsl(281, 68%, 50%);
+}
+
+
+.btn{
+  width: auto;
+  height: auto;
+  
+  display: flex;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+
+.open{
+  display: block;
+
+}
+.close{
+  display: none;
+}
+main ul li .para {
+  position: relative;
+  display: none;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: 400;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  color: hsl(292, 16%, 49%);
+
+}
+.border{
+  border-bottom:1px solid hsl(275, 100%, 97%);
+}
